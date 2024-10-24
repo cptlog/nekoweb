@@ -19,20 +19,6 @@ const ubuntu = localFont({
   variable: "--font-ubuntu"
 })
 
-const Updates = () => {
-  const postMetadata = getPostMetadata('updates')
-  return (
-        <div className="text-sm text-accent border-4 border-accent rounded overflow-y-auto">
-        <div className="font-sofachrome tracking-widest bg-accent text-background p-1 pl-2">updates</div>
-        {postMetadata.map((post, postIndex) => {
-          return (
-            <UpdateCard key={postIndex} post={post} />
-          )
-        })}
-      </div>
-  );
-}
-
 
 export const metadata = {
   title: "DIVISION",
@@ -57,6 +43,22 @@ const links = [
   }
 ]
 
+const Updates = () => {
+  const postMetadata = getPostMetadata('updates')
+  return (
+        <div className="text-xs text-accent border-4 border-accent rounded">
+        <div className="font-sofachrome text-sm tracking-widest bg-accent border-b-4 border-accent text-background p-1 pl-2">updates</div>
+        <div className="overflow-y-auto max-h-96">
+          {postMetadata.map((post, postIndex) => {
+            return (
+              <UpdateCard key={postIndex} post={post} />
+            )
+          })}
+        </div>
+      </div>
+  );
+}
+
 export default function RootLayout({ children }) {
 
   let header = (
@@ -75,7 +77,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="flex justify-center">
-            <div className="w-full md:w-3/4 max-w-[1080px] h-dvh px-6 grid grid-cols-[180px_auto] grid-rows-[180px_30px_auto_50px]">
+            <div className="w-full md:w-3/4 max-w-[1080px] px-6 grid grid-cols-[180px_auto] grid-rows-[180px_30px_auto_50px]">
                 <div className="col-span-2 text-center h-full content-center border-4 border-t-0 border-accent -z-20 rounded-b">
                     <h1 className="font-sofachrome text-accent italic tracking-widest">
                       DIVISION
@@ -92,7 +94,7 @@ export default function RootLayout({ children }) {
                   <Updates />
                 </div>
 
-                <div className="overflow-y-auto ml-4">{children}</div>
+                <div className="overflow-y-auto ml-4 wrap">{children}</div>
 
                 <div className="col-span-2 text-center text-sm">hosted on <a href="https://nekoweb.org/">nekoweb</a></div>
             </div>

@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        accent: "var(--accent)"
+        accent: "var(--accent)",
+        faded: "var(--faded)"
       },
       fontFamily: {
         airstrip: ['Airstrip, Arial, Helvetica, sans-serif'],

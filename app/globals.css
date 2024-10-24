@@ -6,8 +6,9 @@
 
 :root {
   --background: #0a0a0a;
-  --foreground: #ededed;
+  --foreground: #ebebeb;
   --accent: #f3c704;
+  --faded: #c4c4c4;
 }
 
 /*@media (prefers-color-scheme: light) {
@@ -42,12 +43,20 @@ body {
   font-size: 1em;
 }
 
+.wrap {
+  height: calc(100dvh - (180px + 30px + 50px));
+}
+
 h1 { font-size: 2em; }
-
 h2 { font-size: 1.75em; }
-
 h3 { font-size: 1.5em; }
+h4 { font-size: 1.25em; }
 
 p { font-size: 1em; }
+
+hr {
+  margin: 0.5em 0;
+  border: 2px solid var(--accent);
+}
 
 a { color: var(--accent) }
