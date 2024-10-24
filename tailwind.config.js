@@ -10,7 +10,13 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: "var(--accent)"
       },
+      fontFamily: {
+        airstrip: ['Airstrip, Arial, Helvetica, sans-serif'],
+        sofachrome: ['Sofachrome, Arial, Helvetica, sans-serif'],
+        ubuntu: ['Ubuntu, Arial, Helvetica, sans-serif'],
+      }
     },
   },
   plugins: [],
