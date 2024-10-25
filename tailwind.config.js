@@ -17,7 +17,13 @@ module.exports = {
         airstrip: ['Airstrip, Arial, Helvetica, sans-serif'],
         sofachrome: ['Sofachrome, Arial, Helvetica, sans-serif'],
         ubuntu: ['Ubuntu, Arial, Helvetica, sans-serif'],
-      }
+      },
+      width: {
+        pad: ['calc(110% + 20px)']
+      },
+      translate: {
+        pad: ['calc(5% + 10px)']
+      },
     },
   },
   plugins: [],

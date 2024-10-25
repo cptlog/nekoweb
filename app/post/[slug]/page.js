@@ -19,7 +19,7 @@ export const generateStaticParams = async () => {
 }
 
 export async function generateMetadata({params, searchParams}) {
-    const id = await params?.slug ? ': ' + await params?.slug : ''
+    const id = params?.slug ? ': ' + params?.slug : ''
     return {
         title: `DIVISION ${id.replaceAll('_', ' ')}`
     } 

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function PostCard(props) {
     const { post } = props
-    const excerpt = post.content.slice(0,70) + ` ...`
+    const excerpt = post.description.slice(0,70) + ` ...`
     return (
         <Link className="unstyled" href={`/post/${post.slug}`}>
             <div className="postCard mb-4">

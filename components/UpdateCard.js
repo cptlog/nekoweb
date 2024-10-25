@@ -1,3 +1,5 @@
+import Markdown from "react-markdown"
+
 export default function UpdateCard(props) {
     const { post } = props
     return (
@@ -6,7 +8,7 @@ export default function UpdateCard(props) {
                     {post.date}
                 </div>
                 <div className="p-1">
-                    {post.content}
+                    <Markdown>{post.content}</Markdown>
                 </div>
             </div>
     )

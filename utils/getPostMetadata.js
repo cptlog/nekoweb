@@ -13,7 +13,7 @@ export default function getPostMetadata(basePath) {
         return {
             title: matterResult.data.title,
             date: matterResult.data.date,
-            content: matterResult.content,
+            description: matterResult.content,
             slug: filename.replace('.md', '')
         }
     })
