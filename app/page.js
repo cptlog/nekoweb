@@ -15,7 +15,7 @@ export default function Home() {
           some cool graphics
         </li>
         <li>
-          more links in resources
+          <strike>more links in resources</strike>
         </li>
         <li>
           light theme
@@ -27,16 +27,16 @@ export default function Home() {
           music player (no autoplay dont worry)
         </li>
         <li>
-          fix update section
+          <strike>fix update section</strike>
         </li>
         <li>
-          move posts to blog
+          <strike>move posts to blog</strike>
         </li>
         <li>
           component separation & cleanup
         </li>
         <li>
-          change font airstrip to something nicer
+          <strike>change font airstrip to something nicer</strike>
         </li>
       </ul>
     </main>

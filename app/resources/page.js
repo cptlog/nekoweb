@@ -17,12 +17,31 @@ export default function Home() {
             </ul>
             <hr />
             <h3>other cool stuff</h3>
+            <h4>dev courses</h4>
+            <ul className="list-disc list-inside py-2">
+                <li>
+                    <Link href="https://fullstackopen.com/en/">full stack open</Link> - javascript, react
+                </li>
+                <li>
+                    <Link href="https://www.htmldog.com/">htmldog</Link> - html, css, javascript
+                </li>
+            </ul>
+            <h4>image processing</h4>
+            <ul className="list-disc list-inside py-2">
+                <li>
+                    <Link href="https://imagecompressor.com/">optimizilla</Link>
+                </li>
+                <li>
+                    <Link href="https://microstudio.io/gilles/pixelify/">pixelify</Link>
+                </li>
+                <li>
+                    <Link href="https://doodad.dev/dither-me-this/">dither me this</Link>
+                </li>
+            </ul>
+            <h4>miscellaneous</h4>
             <ul className="list-disc list-inside py-2">
                 <li>
                     <Link href="https://github.com/JeffreyCA/lastfm-recently-played-readme">last.fm recently played</Link>
-                </li>
-                <li>
-                    <Link href="https://fullstackopen.com/en/">full stack open</Link> - free course on modern javascript-based web development
                 </li>
             </ul>
         </main>

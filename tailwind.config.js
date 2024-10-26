@@ -14,15 +14,15 @@ module.exports = {
         faded: "var(--faded)"
       },
       fontFamily: {
-        airstrip: ['Airstrip, Arial, Helvetica, sans-serif'],
-        sofachrome: ['Sofachrome, Arial, Helvetica, sans-serif'],
         ubuntu: ['Ubuntu, Arial, Helvetica, sans-serif'],
+        usuzi: ['Usuzi, Arial, Helvetica, sans-serif'],
+        usuziexpand: ['UsuziExpand, Arial, Helvetica, sans-serif']
       },
       width: {
-        pad: ['calc(110% + 20px)']
+        pad: ['calc(105% + 30px)']
       },
       translate: {
-        pad: ['calc(5% + 10px)']
+        pad: ['calc(5% + 13px)']
       },
     },
   },
